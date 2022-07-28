@@ -1,6 +1,7 @@
 A mirror for tinyhttpd(Tinyhttpd非官方镜像,Fork自[sourceForge](https://sourceforge.net/projects/tiny-httpd/),仅供学习)
 
 测试CGI时需要本机安装PERL，同时安装perl-cgi
+参考blog: https://blog.csdn.net/Yihchu/article/details/50732944
 
 ### Prepare 
 Compile for Linux
@@ -11,6 +12,7 @@ Compile for Linux
   3) Comment out the two lines that run pthread_create().
   4) Uncomment the line that runs accept_request().
   5) Remove -lsocket from the Makefile.
+  6) Adapt two .cgi files' first line to your directory of perl
 ```
 
 <p>&nbsp; &nbsp; &nbsp;每个函数的作用：</p>
